@@ -1,0 +1,669 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070d1b;
+    color: #e8efff;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 70px 8%;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    background: #0c1730;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #1c3157;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo span {
+    background: #168bff;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #c5d4ee;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38a7ff;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 12, 29, 0.98),
+            rgba(5, 12, 29, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-tag,
+.small-heading {
+    color: #36a5ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 18px 0;
+    color: white;
+}
+
+.hero-content p {
+    color: #bdcce3;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #168bff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #55b4ff;
+    color: #061126;
+    transform: translateY(-3px);
+}
+
+
+/* STATISTICS */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #101e39;
+    padding: 30px 8%;
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-box {
+    border-right: 1px solid #29436b;
+}
+
+.stat-box:last-child {
+    border: none;
+}
+
+.stat-box h2 {
+    color: #39aaff;
+    font-size: 30px;
+}
+
+.stat-box p {
+    color: #b6c7e2;
+    font-size: 14px;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    margin: 10px 0;
+}
+
+.section-heading > p:last-child {
+    color: #92a7c6;
+    font-size: 14px;
+}
+
+
+/* GAMES SECTION */
+
+.games-section {
+    background: #070d1b;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.game-card {
+    background: #111f3b;
+    border: 1px solid #20385f;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    border-color: #168bff;
+    box-shadow: 0 5px 20px #168bff22;
+}
+
+.game-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 22px;
+}
+
+.game-label {
+    color: #43aaff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.game-info h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+.game-info p {
+    color: #aabbd5;
+    font-size: 14px;
+    min-height: 68px;
+}
+
+.game-info a {
+    display: inline-block;
+    color: #42aaff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* PLAYER PROFILES */
+
+.players-section {
+    background: #0b1429;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.player-card {
+    background: #142544;
+    border: 1px solid #263f67;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.player-card:hover {
+    border-color: #239cff;
+    transform: translateY(-5px);
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    background: #167de0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border: 3px solid #6abaff;
+}
+
+.avatar-two {
+    background: #7046be;
+}
+
+.avatar-three {
+    background: #168e88;
+}
+
+.avatar-four {
+    background: #a44d83;
+}
+
+.player-card h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.player-id {
+    color: #90a6c9;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.rank {
+    display: inline-block;
+    background: #173e6a;
+    color: #65baff;
+    padding: 5px 13px;
+    font-size: 11px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.player-stats {
+    text-align: left;
+    margin-top: 18px;
+    border-top: 1px solid #294064;
+    padding-top: 12px;
+}
+
+.player-stats p {
+    color: #c0cde0;
+    font-size: 13px;
+    padding: 4px 0;
+}
+
+
+/* ESPORTS SECTION */
+
+.esports-section {
+    background: #070d1b;
+}
+
+.esports-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.esports-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 9px;
+    border: 1px solid #294064;
+}
+
+.esports-text h3 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.esports-text p {
+    color: #aabbd5;
+    margin-bottom: 20px;
+}
+
+.esports-text ul {
+    padding-left: 20px;
+    color: #c8d7eb;
+    margin-bottom: 25px;
+}
+
+.esports-text li {
+    padding: 6px 0;
+}
+
+
+/* TOURNAMENT SECTION */
+
+.tournament-section {
+    background: #0b1429;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background: #111f3b;
+    text-align: left;
+}
+
+th {
+    background: #18345d;
+    color: #65baff;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #263d61;
+}
+
+td {
+    color: #d3ddef;
+    font-size: 13px;
+}
+
+tbody tr:hover {
+    background: #1b3154;
+}
+
+.upcoming {
+    background: #153e37;
+    color: #55e3a0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+.demo-note {
+    color: #8298b9;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+
+/* LEADERBOARD */
+
+.leaderboard-section {
+    background: #070d1b;
+}
+
+.top-rank {
+    color: #48b4ff;
+    font-weight: bold;
+}
+
+.leaderboard-section tbody tr:first-child {
+    background: #16345c;
+}
+
+
+/* GAMING NEWS */
+
+.news-section {
+    background: #0b1429;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background: #142544;
+    border: 1px solid #273f65;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    border-color: #168bff;
+    transform: translateY(-5px);
+}
+
+.news-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.news-card h3 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.news-card p {
+    color: #aabbd5;
+    font-size: 13px;
+    min-height: 85px;
+}
+
+.news-card a {
+    display: inline-block;
+    color: #45acff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* COMMUNITY BANNER */
+
+.community-section {
+    background:
+        linear-gradient(
+            rgba(5, 14, 32, 0.90),
+            rgba(5, 14, 32, 0.90)
+        ),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e")
+        center/cover;
+
+    text-align: center;
+    padding: 75px 8%;
+}
+
+.community-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.community-section p {
+    color: #c2d1e8;
+    margin-bottom: 25px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: #101e39;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 25px;
+    color: #c5d4eb;
+    line-height: 2.5;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #050a16;
+    text-align: center;
+    padding: 35px 15px;
+    border-top: 1px solid #1c3157;
+}
+
+footer h3 {
+    color: #42aaff;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #8fa4c4;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin: 18px 0;
+}
+
+.footer-links a {
+    color: #c3d1e7;
+    margin: 0 12px;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #42aaff;
+}
+
+.disclaimer {
+    font-size: 11px;
+}
+
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .games-grid,
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-features,
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 430px;
+        padding: 35px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .games-grid,
+    .player-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .esports-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-box {
+        border: none;
+        padding: 10px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .esports-image img {
+        height: 240px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+}

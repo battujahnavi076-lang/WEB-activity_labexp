@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhavi Library & Learning Centre</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">📚 Janhavi Library</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#rules">Library Rules</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="welcome">WELCOME TO JANHAVI LIBRARY</p>
+        <h1>Discover the World<br>Through Books</h1>
+        <p>
+            Explore knowledge, improve your skills and develop
+            a lifelong reading habit with our wide collection
+            of books.
+        </p>
+        <a href="#books" class="btn">Explore Books</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about section" id="about">
+    <h2>About Our Library</h2>
+    <p>
+        Janhavi Library & Learning Centre is a place where
+        knowledge meets imagination. We provide students,
+        teachers and book lovers with a peaceful environment
+        to read, learn and explore new ideas.
+    </p>
+
+    <div class="stats">
+        <div>
+            <h3>5,000+</h3>
+            <p>Books Available</p>
+        </div>
+        <div>
+            <h3>500+</h3>
+            <p>Registered Members</p>
+        </div>
+        <div>
+            <h3>20+</h3>
+            <p>Book Categories</p>
+        </div>
+        <div>
+            <h3>7 Days</h3>
+            <p>Reading Access</p>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="section categories" id="categories">
+    <h2>Explore Book Categories</h2>
+    <p class="subtitle">Find the right book for your interests.</p>
+
+    <div class="category-grid">
+        <div class="category-card">💻<h3>Technology</h3>
+            <p>Programming and Computers</p></div>
+        <div class="category-card">🔬<h3>Science</h3>
+            <p>Discover the world of science</p></div>
+        <div class="category-card">📐<h3>Mathematics</h3>
+            <p>Numbers and Problem Solving</p></div>
+        <div class="category-card">📖<h3>Fiction</h3>
+            <p>Stories and Imagination</p></div>
+        <div class="category-card">🌍<h3>History</h3>
+            <p>Learn about the past</p></div>
+        <div class="category-card">🎯<h3>Self-Development</h3>
+            <p>Personal Growth and Success</p></div>
+    </div>
+</section>
+
+<!-- Book Collection -->
+<section class="section books-section" id="books">
+    <h2>Our Book Collection</h2>
+    <p class="subtitle">
+        Browse our collection and find your next favourite book.
+    </p>
+
+    <!-- Search and Filters -->
+    <div class="filters">
+        <input type="text" id="searchInput"
+            placeholder="Search by book title or author...">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Science">Science</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Fiction">Fiction</option>
+            <option value="History">History</option>
+            <option value="Self-Development">Self-Development</option>
+        </select>
+
+        <select id="availabilityFilter">
+            <option value="all">All Availability</option>
+            <option value="Available">Available</option>
+            <option value="Borrowed">Borrowed</option>
+        </select>
+    </div>
+
+    <!-- Book Cards -->
+    <div class="book-grid" id="bookGrid">
+
+        <div class="book-card" data-title="Python Programming"
+            data-author="Reema Thareja" data-category="Technology"
+            data-status="Available">
+            <div class="book-cover cover1">
+                <span>PYTHON</span>
+                <small>PROGRAMMING</small>
+                <b>Learn to Code</b>
+            </div>
+            <div class="book-info">
+                <h3>Python Programming</h3>
+                <p>Author: Reema Thareja</p>
+                <p>Category: Technology</p>
+                <span class="available">Available</span>
+            </div>
+        </div>
+
+        <div class="book-card" data-title="A Brief History of Time"
+            data-author="Stephen Hawking" data-category="Science"
+            data-status="Available">
+            <div class="book-cover cover2">
+                <span>A BRIEF</span>
+                <b>HISTORY OF TIME</b>
+                <small>STEPHEN HAWKING</small>
+            </div>
+            <div class="book-info">
+                <h3>A Brief History of Time</h3>
+                <p>Author: Stephen Hawking</p>
+                <p>Category: Science</p>
+                <span class="available">Available</span>
+            </div>
+        </div>
+
+        <div class="book-card" data-title="Engineering Mathematics"
+            data-author="B. S. Grewal" data-category="Mathematics"
+            data-status="Borrowed">
+            <div class="book-cover cover3">
+                <span>ENGINEERING</span>
+                <b>MATHEMATICS</b>
+                <small>B. S. GREWAL</small>
+            </div>
+            <div class="book-info">
+                <h3>Engineering Mathematics</h3>
+                <p>Author: B. S. Grewal</p>
+                <p>Category: Mathematics</p>
+                <span class="borrowed">Borrowed</span>
+            </div>
+        </div>
+
+        <div class="book-card" data-title="The Alchemist"
+            data-author="Paulo Coelho" data-category="Fiction"
+            data-status="Available">
+            <div class="book-cover cover4">
+                <span>THE</span>
+                <b>ALCHEMIST</b>
+                <small>PAULO COELHO</small>
+            </div>
+            <div class="book-info">
+                <h3>The Alchemist</h3>
+                <p>Author: Paulo Coelho</p>
+                <p>Category: Fiction</p>
+                <span class="available">Available</span>
+            </div>
+        </div>
+
+        <div class="book-card" data-title="Wings of Fire"
+            data-author="A. P. J. Abdul Kalam" data-category="History"
+            data-status="Available">
+            <div class="book-cover cover5">
+                <span>WINGS</span>
+                <b>OF FIRE</b>
+                <small>A. P. J. ABDUL KALAM</small>
+            </div>
+            <div class="book-info">
+                <h3>Wings of Fire</h3>
+                <p>Author: A. P. J. Abdul Kalam</p>
+                <p>Category: History</p>
+                <span class="available">Available</span>
+            </div>
+        </div>
+
+        <div class="book-card" data-title="Atomic Habits"
+            data-author="James Clear" data-category="Self-Development"
+            data-status="Borrowed">
+            <div class="book-cover cover6">
+                <span>ATOMIC</span>
+                <b>HABITS</b>
+                <small>JAMES CLEAR</small>
+            </div>
+            <div class="book-info">
+                <h3>Atomic Habits</h3>
+                <p>Author: James Clear</p>
+                <p>Category: Self-Development</p>
+                <span class="borrowed">Borrowed</span>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="noResults">No books found. Try another search.</p>
+</section>
+
+<!-- Catalog Table -->
+<section class="section catalog" id="catalog">
+    <h2>Library Book Catalog</h2>
+    <p class="subtitle">Complete details of our selected books.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody id="catalogBody">
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Library Rules -->
+<section class="section rules" id="rules">
+    <h2>Library Rules & Regulations</h2>
+
+    <div class="rules-box">
+        <ol>
+            <li>Every member must carry a valid library ID card.</li>
+            <li>Books can be borrowed for a maximum of 14 days.</li>
+            <li>Members must return books on or before the due date.</li>
+            <li>Keep silence inside the library.</li>
+            <li>Food and drinks are not allowed in the reading area.</li>
+            <li>Handle all books carefully and do not damage them.</li>
+            <li>Late returns may be subject to a fine.</li>
+            <li>Maintain cleanliness and discipline in the library.</li>
+        </ol>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+    <h2>Contact Us</h2>
+    <p>We are happy to help you with your reading journey.</p>
+
+    <div class="contact-details">
+        <p>📍 Address: Hyderabad, Telangana, India</p>
+        <p>📧 Email: janhavilibrary@example.com</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>🕒 Opening Hours: 9:00 AM – 7:00 PM</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>Janhavi Library & Learning Centre</h3>
+    <p>Read More. Learn More. Grow More.</p>
+    <p>© 2026 Janhavi Library. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

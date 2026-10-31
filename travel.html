@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahnavi Travels | Explore the World</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">✈ Jahnavi Travels</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#information">Travel Info</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">YOUR JOURNEY BEGINS HERE</p>
+
+        <h1>Explore Beautiful Places<br>Make Beautiful Memories</h1>
+
+        <p>
+            Discover amazing destinations, enjoy exciting holidays
+            and travel with comfort. Let us make your next trip special.
+        </p>
+
+        <a href="#packages" class="btn">Explore Packages</a>
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-section">
+    <h2>Find Your Perfect Holiday</h2>
+
+    <div class="search-box">
+        <select id="destinationSearch">
+            <option value="all">Select Destination</option>
+            <option value="Goa">Goa</option>
+            <option value="Manali">Manali</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Kashmir">Kashmir</option>
+            <option value="Ooty">Ooty</option>
+        </select>
+
+        <select id="durationSearch">
+            <option value="all">Any Duration</option>
+            <option value="3">3 Days</option>
+            <option value="5">5 Days</option>
+            <option value="6">6 Days</option>
+            <option value="7">7 Days</option>
+        </select>
+
+        <button onclick="searchPackages()">Search Trips</button>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="section about" id="about">
+    <h2>About Jahnavi Travels</h2>
+
+    <p>
+        Jahnavi Travels is a travel agency that helps people
+        discover beautiful destinations and enjoy memorable holidays.
+        We offer carefully planned travel packages for families,
+        friends, couples and individual travellers.
+        Our aim is to make every journey comfortable,
+        enjoyable and affordable.
+    </p>
+
+    <div class="about-features">
+        <div>
+            <h3>🌍</h3>
+            <h4>Beautiful Destinations</h4>
+            <p>Explore amazing places across India.</p>
+        </div>
+
+        <div>
+            <h3>💰</h3>
+            <h4>Affordable Packages</h4>
+            <p>Holiday plans for different budgets.</p>
+        </div>
+
+        <div>
+            <h3>🏨</h3>
+            <h4>Comfortable Stays</h4>
+            <p>Enjoy relaxing accommodation.</p>
+        </div>
+
+        <div>
+            <h3>🤝</h3>
+            <h4>Travel Assistance</h4>
+            <p>Support throughout your journey.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Destinations -->
+<section class="section destinations" id="destinations">
+
+    <h2>Popular Destinations</h2>
+    <p class="subtitle">
+        Discover some of the most beautiful places in India.
+    </p>
+
+    <div class="destination-grid">
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+                 alt="Goa beach">
+            <div class="destination-info">
+                <h3>Goa</h3>
+                <p>Beautiful beaches and exciting activities.</p>
+                <span>Starting from ₹7,999</span>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"
+                 alt="Manali mountains">
+            <div class="destination-info">
+                <h3>Manali</h3>
+                <p>Snow-covered mountains and scenic views.</p>
+                <span>Starting from ₹12,999</span>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+                 alt="Kerala backwaters">
+            <div class="destination-info">
+                <h3>Kerala</h3>
+                <p>Green landscapes and peaceful backwaters.</p>
+                <span>Starting from ₹10,999</span>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a"
+                 alt="Jaipur palace">
+            <div class="destination-info">
+                <h3>Jaipur</h3>
+                <p>Royal palaces and rich Indian culture.</p>
+                <span>Starting from ₹8,999</span>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d"
+                 alt="Kashmir valley">
+            <div class="destination-info">
+                <h3>Kashmir</h3>
+                <p>Beautiful valleys, lakes and mountains.</p>
+                <span>Starting from ₹15,999</span>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e"
+                 alt="Ooty hill station">
+            <div class="destination-info">
+                <h3>Ooty</h3>
+                <p>Tea gardens and cool mountain weather.</p>
+                <span>Starting from ₹9,999</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Holiday Packages -->
+<section class="section packages" id="packages">
+
+    <h2>Our Holiday Packages</h2>
+    <p class="subtitle">
+        Choose a package that suits your budget and travel plans.
+    </p>
+
+    <div class="package-grid" id="packageGrid">
+
+        <div class="package-card"
+             data-destination="Goa" data-duration="3">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+                 alt="Goa holiday">
+
+            <div class="package-info">
+                <h3>Goa Beach Holiday</h3>
+                <p>📍 Goa, India</p>
+                <p>🕒 3 Days / 2 Nights</p>
+                <p>Includes hotel stay, sightseeing and breakfast.</p>
+                <h3 class="price">₹7,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Goa')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+        <div class="package-card"
+             data-destination="Manali" data-duration="5">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"
+                 alt="Manali holiday">
+
+            <div class="package-info">
+                <h3>Manali Mountain Tour</h3>
+                <p>📍 Manali, Himachal Pradesh</p>
+                <p>🕒 5 Days / 4 Nights</p>
+                <p>Includes hotel stay, local sightseeing and breakfast.</p>
+                <h3 class="price">₹12,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Manali')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+        <div class="package-card"
+             data-destination="Kerala" data-duration="5">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+                 alt="Kerala holiday">
+
+            <div class="package-info">
+                <h3>Kerala Nature Package</h3>
+                <p>📍 Kerala, India</p>
+                <p>🕒 5 Days / 4 Nights</p>
+                <p>Includes hotel, sightseeing and backwater visit.</p>
+                <h3 class="price">₹10,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Kerala')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+        <div class="package-card"
+             data-destination="Jaipur" data-duration="3">
+            <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a"
+                 alt="Jaipur holiday">
+
+            <div class="package-info">
+                <h3>Jaipur Heritage Tour</h3>
+                <p>📍 Jaipur, Rajasthan</p>
+                <p>🕒 3 Days / 2 Nights</p>
+                <p>Includes hotel, city tour and breakfast.</p>
+                <h3 class="price">₹8,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Jaipur')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+        <div class="package-card"
+             data-destination="Kashmir" data-duration="7">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d"
+                 alt="Kashmir holiday">
+
+            <div class="package-info">
+                <h3>Kashmir Paradise Tour</h3>
+                <p>📍 Kashmir, India</p>
+                <p>🕒 7 Days / 6 Nights</p>
+                <p>Includes hotel, sightseeing and local transport.</p>
+                <h3 class="price">₹15,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Kashmir')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+        <div class="package-card"
+             data-destination="Ooty" data-duration="6">
+            <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e"
+                 alt="Ooty holiday">
+
+            <div class="package-info">
+                <h3>Ooty Hill Station Tour</h3>
+                <p>📍 Ooty, Tamil Nadu</p>
+                <p>🕒 6 Days / 5 Nights</p>
+                <p>Includes hotel, sightseeing and breakfast.</p>
+                <h3 class="price">₹9,999 <small>/ person</small></h3>
+                <button onclick="showItinerary('Ooty')">
+                    View Itinerary
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="noPackages">No packages found. Please try another search.</p>
+</section>
+
+<!-- Itinerary Section -->
+<section class="section itinerary" id="itinerary">
+
+    <h2>Trip Itinerary</h2>
+
+    <div class="itinerary-box" id="itineraryBox">
+        <p>
+            Select the View Itinerary button on any holiday package
+            to see its day-wise travel plan.
+        </p>
+    </div>
+
+</section>
+
+<!-- Travel Information -->
+<section class="section travel-info" id="information">
+
+    <h2>Important Travel Information</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>🪪 Documents</h3>
+            <p>Carry a valid identity card and booking confirmation
+               during your journey.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🎒 Packing</h3>
+            <p>Pack suitable clothes, personal items and necessary
+               medicines for your trip.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏨 Accommodation</h3>
+            <p>Check hotel details, check-in times and booking
+               information before travelling.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🛡 Safety</h3>
+            <p>Follow local instructions and keep your important
+               belongings safe.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Booking Enquiry -->
+<section class="section booking" id="booking">
+
+    <h2>Plan Your Next Trip</h2>
+    <p class="subtitle">
+        Send us your details and we will contact you.
+    </p>
+
+    <form id="bookingForm">
+
+        <input type="text" id="customerName"
+               placeholder="Your Full Name" required>
+
+        <input type="email" id="customerEmail"
+               placeholder="Your Email Address" required>
+
+        <input type="tel" id="customerPhone"
+               placeholder="Your Phone Number"
+               pattern="[0-9]{10}" maxlength="10" required>
+
+        <select id="customerDestination" required>
+            <option value="">Choose Your Destination</option>
+            <option>Goa</option>
+            <option>Manali</option>
+            <option>Kerala</option>
+            <option>Jaipur</option>
+            <option>Kashmir</option>
+            <option>Ooty</option>
+        </select>
+
+        <input type="number" id="travellers"
+               placeholder="Number of Travellers"
+               min="1" required>
+
+        <button type="submit">Submit Enquiry</button>
+
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+
+    <h2>Contact Jahnavi Travels</h2>
+
+    <p>We are here to help you plan your next holiday.</p>
+
+    <div class="contact-details">
+        <p>📍 Address: Hyderabad, Telangana, India</p>
+        <p>📧 Email: jahnavi.travels@example.com</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>🕒 Working Hours: Monday - Saturday, 9 AM - 6 PM</p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>✈ Jahnavi Travels</h3>
+    <p>Explore More. Travel More. Live More.</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p>© 2026 Jahnavi Travels. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
